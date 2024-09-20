@@ -64,6 +64,7 @@ export function toHaveFormValues(formElement, expectedValues) {
   checkHtmlElement(formElement, toHaveFormValues, this)
   if (!formElement.elements) {
     // TODO: Change condition to use instanceof against the appropriate element classes instead
+    console.log('coucou')
     throw new Error('toHaveFormValues must be called on a form or a fieldset')
   }
   const formValues = getAllFormValues(formElement)
